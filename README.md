@@ -1,5 +1,18 @@
 # fleet-memory-kit
 
+[![pytest](https://img.shields.io/badge/tests-pytest-blue?logo=pytest)](https://github.com/ecs7723158/fleet-memory-kit)
+[![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/ecs7723158/fleet-memory-kit)
+[![python](https://img.shields.io/badge/python-3.x-blue?logo=python)](https://github.com/ecs7723158/fleet-memory-kit)
+
+## Demo (30s)
+
+Copy-paste the CMD CLI path for a quick local search:
+
+```bash
+~/Projects/fleet-memory-kit/.venv/bin/fleet-memory --help
+~/Projects/fleet-memory-kit/.venv/bin/fleet-memory --root ~/Projects/fleet-memory-kit/memory search offer
+```
+
 Local **markdown memory bank** for Oscar Kate's device fleet (WIN + MBP + Grok Bot box), with CLI, unit tests, and hooks aligned to common AI ops tools:
 
 | Tool | Role | Stars (approx) | Status in this kit |
