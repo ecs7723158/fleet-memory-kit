@@ -1,0 +1,8 @@
+# Optional: Langfuse self-host via colima/docker on MBP.
+# Source pattern: https://github.com/langfuse/langfuse
+# Usage: docker compose -f docker-compose.langfuse.yml up -d
+# Prefer official langfuse docker-compose from upstream when you need full stack.
+services:
+  placeholder:
+    image: hello-world
+    profiles: ["disabled"]

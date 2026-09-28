@@ -1,0 +1,12 @@
+# promptfoo-compatible stub (run on WIN hq-os or any node host with promptfoo)
+description: fleet-memory smoke prompts
+prompts:
+  - "Summarize this memory entry for an ops brief:\n{{body}}"
+providers:
+  - echo
+tests:
+  - vars:
+      body: "Kubernetes HPA scales on CPU and custom metrics."
+    assert:
+      - type: contains
+        value: "HPA"
