@@ -4,14 +4,48 @@
 [![license](https://img.shields.io/badge/license-MIT-green)](https://github.com/ecs7723158/fleet-memory-kit)
 [![python](https://img.shields.io/badge/python-3.x-blue?logo=python)](https://github.com/ecs7723158/fleet-memory-kit)
 
-## Demo (30s)
+## Demo
 
-Copy-paste the CMD CLI path for a quick local search:
+**Interview pitch:** Local markdown memory bank with CLI + unit tests + GitHub Actions CI — all green, no API key required. **LICENSE: MIT.**
+
+One-shot harness (pytest + career/offer CLI search):
+
+```bash
+cd ~/Projects/fleet-memory-kit   # or: cd /path/to/fleet-memory-kit
+./scripts/demo.sh
+```
+
+Expected output shape:
+
+```
+==> fleet-memory-kit demo
+    root: .../fleet-memory-kit
+    venv:  .venv (activated)
+
+==> pytest -q
+...                                      [100%]
+SUCCESS: pytest passed
+
+==> CLI demo: search career/offer memories
+    entrypoint: fleet-memory
+    ...
+[ JSON array of entries tagged career/offer ]
+SUCCESS: CLI demo completed
+
+==> Portfolio / interview hints
+    ...
+SUCCESS: demo harness finished OK
+```
+
+Manual 30s CLI path (same search the harness runs):
 
 ```bash
 ~/Projects/fleet-memory-kit/.venv/bin/fleet-memory --help
 ~/Projects/fleet-memory-kit/.venv/bin/fleet-memory --root ~/Projects/fleet-memory-kit/memory search offer
 ```
+
+Portfolio one-pager (CMD box): `/home/box/knowledge/projects/career/portfolio-onepager-2026-09-29.md`  
+CMD cheat-sheet: `README_CMD.md`
 
 Local **markdown memory bank** for Oscar Kate's device fleet (WIN + MBP + Grok Bot box), with CLI, unit tests, and hooks aligned to common AI ops tools:
 
